@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" th:href="@{css/login.css}">
+    </head>
+    <body>
+        <div class="login">
+            <h1>Login</h1>
+            <form method="post" th:action="@{/login}" th:object="${loginRequest}" th:mehod="POST">
+                <input type="text" name="username" placeholder="Username" required="required" th:field="*{username}"/>
+                <input type="password" name="password" placeholder="Password" required="required"  th:field="*{password}"/>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+            </form>
+        </div>
+
+          <script th:src="@{js/login.js}"></script>
+    </body>
+</html>

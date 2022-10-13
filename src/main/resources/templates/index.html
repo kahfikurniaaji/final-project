@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Mobil Legend</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{css/homeHeader.css}" />
+    <link rel="stylesheet" th:href="@{css/homeNavbar.css}" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">RENTAL MOBIL LEGENDS</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#3">Car</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#4">Contact</a>
+                </li>
+                <li>
+                  <a class="nav-link" th:href="@{/booking}">Booking</a>
+                </li>
+              </ul>
+                <button class="btn btn-outline-danger" type="submit">Logout</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- header -->
+    <div class="header">
+      <div class="info animate__animated animate__backInDown">
+        <h1>RENTAL MOBIL LEGENDS.</h1>
+        <a href="#2" id="about">ABOUT US</a>
+      </div>
+    </div>
+    <section class="content animate__animated animate__backInUp" id="2">
+      <h1>About Us</h1>
+      <p>
+        RENTAL MOBIL LEGENDS is a company engaged in IT and transportation services. While working in the field of transportation services, RENTAL MOBIL LEGENDS saw business opportunities in Indonesia. Many of the perpetrators do not pay attention to the ease with which prospective customers can get the car they really want. RENTAL MOBIL LEGENDS, which is aware of the rapid development of the use of applications, has the initiative to find solutions between perpetrators and potential customers. Based on RENTAL MOBIL LEGENDS's desire to help car renters get the car of choice, help online car rental market their online car rental products, and support Indonesian tourism, RENTAL MOBIL LEGENDS invites online car rental business players to take shelter in an e-marketplace with the name of RENTAL MOBIL LEGENDS.
+      </p>
+    </section>
+
+    <div class="countainer" id="3">
+      <div class="cardBtn">
+        <h1>Choose a Car</h1>
+        <a th:href="@{/booking}" id="booking">Booking</a>
+      </div>
+      <div class="cardWrap" id="crd">
+        <!-- <div class="card">
+          <img th:src="@{asset/car.png}" alt="" id="imgCard" />
+          <div class="text">
+            <h1><span>merek</span> <span>nama</span></h1>
+            <p>car type</p>
+            <div id="card1">
+              <div class="cardContent">
+                <img th:src="@{asset/plate.png}" alt="" id="imgContent">
+                <p>Number Plate: <span></span></p>
+              </div>
+              <div class="cardContent">
+                <img th:src="@{asset/dollar.png}" alt="" id="imgContent">
+                <p>Rentcost: <span></span></p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div class="cotactContainer">
+      <div class="contact" id="4">
+        <h1>Contact</h1>
+        <div class="cardContact">
+          <img th:src="@{asset/email.png}" alt="" id="imgContact">
+          <div class="wrapText">
+            <h1>Email</h1>
+            <p>rentalmobiluhuy@gmail.com</p>
+          </div>
+        </div>
+        <div class="cardContact">
+          <img th:src="@{asset/location.png}" alt="" id="imgContact">
+          <div class="wrapText">
+            <h1>Location</h1>
+            <p>Sermersooq Municipality - Greenland</p>
+          </div>
+        </div>
+        <div class="cardContact">
+          <img th:src="@{asset/whatsapp.png}"alt="" id="imgContact">
+          <div class="wrapText">
+            <h1>Whatsapp</h1>
+            <p>+299 2336 1192336</p>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <h1>© 2022 Kelompok 3</h1>
+    </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+0
+    <script th:src="@{styleJs/homeNavbar.js}"></script>
+    <script th:src="@{js/index.js}"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

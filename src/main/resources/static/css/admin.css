@@ -1,0 +1,21 @@
+#container1{
+    box-shadow: 5px 10px 8px 10px #888888;
+    padding: 20px;
+    margin: 30px auto;
+}
+.btn1{
+    margin: 30px;
+}
+
+footer{
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer >h1{
+    text-align: center;
+    color: white;font-size: 20px;
+  }

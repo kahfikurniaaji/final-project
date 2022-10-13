@@ -1,0 +1,32 @@
+/* nav{
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    position: fixed;
+}
+
+nav > h1{
+
+    color: white;
+}
+
+.listNavbar{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.listNavbar >li >a{
+    text-decoration: none;
+    color: white;
+}
+
+#btnNavbar{
+    background-color: aquamarine;
+    color:black;
+    padding: 10px 20px;
+    border-radius: 10px;
+} */
